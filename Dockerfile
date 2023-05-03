@@ -43,4 +43,4 @@ CMD ["bash"]
   #apt-get install lxde && \
   #apt-get install mate-desktop-environment-core && \
   #apt install firefox && \
-  apt-get install falkon && \
+  #apt-get install falkon && \
