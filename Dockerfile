@@ -8,7 +8,6 @@
 FROM ubuntu:22.04
 
 # Install.
-#apt install xfce4 xfce4-goodies -y && \
 RUN \
   sed -i 's/# \(.*multiverse$\)/\1/g' /etc/apt/sources.list && \
   apt-get update && \
@@ -16,16 +15,6 @@ RUN \
   apt-get install -y build-essential && \
   apt-get install -y software-properties-common && \
   apt-get install -y byobu curl git htop man unzip vim wget && \
-  echo 'deb http://archive.ubuntu.com/ubuntu/ bionic universe' >> /etc/apt/sources.list && \
-  apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 40976EAF437D05B5 && \
-  apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 3B4FE6ACC0B21F32 && \
-  apt update && \
-  apt -y install vnc4server && \
-  apt-get install fluxbox && \
-  apt-get install lxde && \
-  apt-get install mate-desktop-environment-core && \
-  apt install firefox && \
-  apt-get install falkon && \
   rm -rf /var/lib/apt/lists/*
 
 # Add files.
@@ -41,3 +30,17 @@ WORKDIR /root
 
 # Define default command.
 CMD ["bash"]
+
+
+
+  #echo 'deb http://archive.ubuntu.com/ubuntu/ bionic universe' >> /etc/apt/sources.list && \
+  #apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 40976EAF437D05B5 && \
+  #apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 3B4FE6ACC0B21F32 && \
+  #apt update && \
+  #apt -y install vnc4server && \
+  #apt install xfce4 xfce4-goodies -y && \
+  #apt-get install fluxbox && \
+  #apt-get install lxde && \
+  #apt-get install mate-desktop-environment-core && \
+  #apt install firefox && \
+  apt-get install falkon && \
