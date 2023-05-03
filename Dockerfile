@@ -44,3 +44,7 @@ CMD ["bash"]
   #apt-get install mate-desktop-environment-core && \
   #apt install firefox && \
   #apt-get install falkon && \
+
+#create VNC password
+#To run the VNC: sudo vncserver -geometry 1366x768
+#Now, go to the container settings and do a port forwarding rule with the port: 5901
