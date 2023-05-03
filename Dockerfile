@@ -20,7 +20,7 @@ RUN \
   apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 3B4FE6ACC0B21F32 && \
   apt update && \
   apt -y install vnc4server && \
-  apt install xfce4 xfce4-goodies -y && \
+  #apt install xfce4 xfce4-goodies -y && \
   apt-get install fluxbox && \
   apt-get install lxde && \
   apt-get install mate-desktop-environment-core && \
