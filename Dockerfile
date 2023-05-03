@@ -17,6 +17,8 @@ RUN \
   apt-get install -y byobu curl git htop man unzip vim wget && \
   echo 'deb http://archive.ubuntu.com/ubuntu/ bionic universe' >> /etc/apt/sources.list && \
   apt update && \
+  apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 40976EAF437D05B5 && \
+  apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 3B4FE6ACC0B21F32 && \
   apt -y install vnc4server && \
   apt install xfce4 xfce4-goodies -y && \
   apt-get install fluxbox && \
